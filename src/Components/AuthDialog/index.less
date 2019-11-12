@@ -1,0 +1,29 @@
+@header-bg:rgb(34, 116, 71);
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.label {
+    flex: 2
+}
+
+.select {
+    flex: 3
+}
+
+.ant-select-selection, .ant-btn, .ant-modal-content, .ant-modal-footer, .ant-modal-header, .ant-select-dropdown, .ant-select-dropdown-menu-item:first-child, .ant-select-dropdown-menu-item:last-child {
+    border-radius: 0 !important;
+}
+
+.ant-modal-header, .ant-btn-primary{
+    background: @header-bg !important;
+    border: 0 !important
+}
+
+.ant-modal-title {
+    color: white !important
+}
+

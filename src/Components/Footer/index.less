@@ -1,0 +1,63 @@
+@tab-border: rgb(67, 67, 66);
+@tab-background: rgb(243,243,241);
+@grey-header:#eaeaea;
+@grey-border: rgb(213, 213, 213);
+@grey-header-bottom: rgb(182, 182, 182);
+@row-height: 4vh;
+@footer-height: 4vh;
+@header-bg:rgb(34, 116, 71);
+.footer{
+    height: @footer-height;
+    width: 100%;
+    background: @grey-header;
+}
+
+.tabs-pane {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab {
+    width: 5vw;
+    min-width: 50px;
+    height: @footer-height;
+    box-sizing: border-box;
+    border-right: 0.1vw solid @grey-border;
+    color: black;
+    font-size: 2vh;
+    text-align: center;
+    line-height: @footer-height;
+    cursor: pointer
+}
+
+.tab:hover {
+    font-weight: 600
+}
+
+.active {
+    color: @header-bg;
+    background: white;
+    border-bottom: 0.3vh solid @header-bg;
+    font-weight: 600
+}
+
+.add-sheet {
+    height: 4vh;
+    width: 4vh;
+    padding: 0.7vh;
+}
+
+.add-sheet:hover {
+    color: @header-bg
+}
+
+.sheet-name-input {
+    height: 3vh;
+    width: 4vw;
+    min-width: 40px;
+    padding-left: 3px;
+}
+
+.sheet-name-input:focus {
+    outline: none
+}
